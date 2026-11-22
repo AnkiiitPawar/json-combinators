@@ -1,0 +1,21 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: haskell-actions/setup@v2
+        with:
+          ghc-version: '9.6'
+          cabal-version: 'latest'
+      - name: Update package index
+        run: cabal update
+      - name: Build
+        run: cabal build all --enable-tests --enable-benchmarks
+      - name: Test
+        run: cabal test --test-show-details=direct

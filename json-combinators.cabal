@@ -12,6 +12,7 @@ author:             Ankit Pawar
 maintainer:         ankitpawarfinn2209@gmail.com
 category:           Text, Parsing, JSON
 build-type:         Simple
+extra-doc-files:    README.md
 tested-with:        GHC ==9.4.7 || ==9.6.7
 
 common shared
@@ -32,3 +33,11 @@ test-suite spec
   hs-source-dirs: test
   main-is:        Main.hs
   build-depends:  json-combinators, directory, filepath, QuickCheck >=2.13 && <2.17
+
+benchmark throughput
+  import:         shared
+  type:           exitcode-stdio-1.0
+  hs-source-dirs: bench
+  main-is:        Main.hs
+  build-depends:  json-combinators
+  ghc-options:    -O2 -rtsopts
