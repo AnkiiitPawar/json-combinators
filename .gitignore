@@ -1,0 +1,4 @@
+dist-newstyle/
+bench-doc.json
+*.hi
+*.o
