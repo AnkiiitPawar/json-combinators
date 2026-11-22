@@ -115,4 +115,12 @@ tests/JSONTestSuite/            test files and licence (MIT, Nicolas Seriot)
 
 ## Licence
 
-MIT. The files in `tests/JSONTestSuite/` are MIT-licensed by Nicolas Seriot; see the licence file there.
+Copyright (c) 2026 Ankit Pawar. All Rights Reserved.
+
+This repository is public so that the work can be read and evaluated, but it is not open source. Using, copying, modifying, redistributing or commercially exploiting any part of it requires prior written permission. This does not affect what applicable law allows without permission, or viewing and forking the repository on GitHub under GitHub's Terms of Service. The full terms are in [LICENSE](LICENSE).
+
+The files in `tests/JSONTestSuite/` are from JSONTestSuite by Nicolas Seriot. They keep their MIT License (see the licence file there) and are not covered by this notice.
+
+Commits up to and including `6fd4d21` were released under the MIT License, and copies obtained under those terms keep them.
+
+For licensing or collaboration, email ankitpawar0007x@gmail.com or visit [ankitinorbit.com](https://ankitinorbit.com).

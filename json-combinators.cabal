@@ -6,7 +6,7 @@ description:
   A parser-combinator library over strict ByteString input with committed
   choice and merged error expectations, and an RFC 8259 JSON parser and
   encoder written with it. Numbers are exact decimals.
-license:            MIT
+license:            NONE
 license-file:       LICENSE
 author:             Ankit Pawar
 maintainer:         ankitpawarfinn2209@gmail.com
