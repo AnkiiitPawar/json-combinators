@@ -22,5 +22,13 @@ common shared
 library
   import:          shared
   hs-source-dirs:  src
-  exposed-modules: JsonCombinators.Parser
+  exposed-modules: JsonCombinators
+                   JsonCombinators.Parser
   ghc-options:     -O2
+
+test-suite spec
+  import:         shared
+  type:           exitcode-stdio-1.0
+  hs-source-dirs: test
+  main-is:        Main.hs
+  build-depends:  json-combinators, directory, filepath, QuickCheck >=2.13 && <2.17
